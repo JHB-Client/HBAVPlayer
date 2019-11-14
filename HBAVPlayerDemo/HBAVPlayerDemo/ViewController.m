@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSString *playerUrl = @"http://front-images.oss-cn-hangzhou.aliyuncs.com/i4/7cd76264037912663238de6cad3a5a71-167200670";
+    NSString *playerUrl = @"http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d9bfe_wpd.mp4";
     [self playWithUrl:playerUrl];
 }
 
