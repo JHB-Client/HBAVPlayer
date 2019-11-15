@@ -1,0 +1,6 @@
+framework module Pods_HBVideoPlayDemo {
+  umbrella header "Pods-HBVideoPlayDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58B8153FA153B33719B4E481 /* Pods_HBVideoPlayDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 599DA3AA367B8A8D718AB15F /* Pods_HBVideoPlayDemo.framework */; };
+		848A5017237D4EAE001F9158 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A5016237D4EAE001F9158 /* AppDelegate.m */; };
+		848A501A237D4EAE001F9158 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A5019237D4EAE001F9158 /* ViewController.m */; };
+		848A501D237D4EAE001F9158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848A501B237D4EAE001F9158 /* Main.storyboard */; };
+		848A501F237D4EAF001F9158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848A501E237D4EAF001F9158 /* Assets.xcassets */; };
+		848A5022237D4EAF001F9158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848A5020237D4EAF001F9158 /* LaunchScreen.storyboard */; };
+		848A5025237D4EAF001F9158 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A5024237D4EAF001F9158 /* main.m */; };
+		848A502D237D4F27001F9158 /* HBVideoPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A502C237D4F27001F9158 /* HBVideoPlayViewController.m */; };
+		848A5033237D6240001F9158 /* HBAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A5032237D6240001F9158 /* HBAVPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		454703247B9580C5BF0F0E83 /* Pods-HBVideoPlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBVideoPlayDemo.release.xcconfig"; path = "Target Support Files/Pods-HBVideoPlayDemo/Pods-HBVideoPlayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		599DA3AA367B8A8D718AB15F /* Pods_HBVideoPlayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HBVideoPlayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848A5012237D4EAE001F9158 /* HBVideoPlayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBVideoPlayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848A5015237D4EAE001F9158 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		848A5016237D4EAE001F9158 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		848A5018237D4EAE001F9158 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		848A5019237D4EAE001F9158 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		848A501C237D4EAE001F9158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		848A501E237D4EAF001F9158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848A5021237D4EAF001F9158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		848A5023237D4EAF001F9158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848A5024237D4EAF001F9158 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		848A502B237D4F27001F9158 /* HBVideoPlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBVideoPlayViewController.h; sourceTree = "<group>"; };
+		848A502C237D4F27001F9158 /* HBVideoPlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBVideoPlayViewController.m; sourceTree = "<group>"; };
+		848A5031237D6240001F9158 /* HBAVPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBAVPlayer.h; sourceTree = "<group>"; };
+		848A5032237D6240001F9158 /* HBAVPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBAVPlayer.m; sourceTree = "<group>"; };
+		EA811A0B2DC23AAAA14C366B /* Pods-HBVideoPlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBVideoPlayDemo.debug.xcconfig"; path = "Target Support Files/Pods-HBVideoPlayDemo/Pods-HBVideoPlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		848A500F237D4EAE001F9158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58B8153FA153B33719B4E481 /* Pods_HBVideoPlayDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		366FDC6B67729F48087FED50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				599DA3AA367B8A8D718AB15F /* Pods_HBVideoPlayDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		848A5009237D4EAE001F9158 = {
+			isa = PBXGroup;
+			children = (
+				848A5014237D4EAE001F9158 /* HBVideoPlayDemo */,
+				848A5013237D4EAE001F9158 /* Products */,
+				F6A70DEE90E631E9EDF6AC9B /* Pods */,
+				366FDC6B67729F48087FED50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		848A5013237D4EAE001F9158 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				848A5012237D4EAE001F9158 /* HBVideoPlayDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		848A5014237D4EAE001F9158 /* HBVideoPlayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				848A5015237D4EAE001F9158 /* AppDelegate.h */,
+				848A5016237D4EAE001F9158 /* AppDelegate.m */,
+				848A5018237D4EAE001F9158 /* ViewController.h */,
+				848A5019237D4EAE001F9158 /* ViewController.m */,
+				848A502B237D4F27001F9158 /* HBVideoPlayViewController.h */,
+				848A502C237D4F27001F9158 /* HBVideoPlayViewController.m */,
+				848A5031237D6240001F9158 /* HBAVPlayer.h */,
+				848A5032237D6240001F9158 /* HBAVPlayer.m */,
+				848A501B237D4EAE001F9158 /* Main.storyboard */,
+				848A501E237D4EAF001F9158 /* Assets.xcassets */,
+				848A5020237D4EAF001F9158 /* LaunchScreen.storyboard */,
+				848A5023237D4EAF001F9158 /* Info.plist */,
+				848A5024237D4EAF001F9158 /* main.m */,
+			);
+			path = HBVideoPlayDemo;
+			sourceTree = "<group>";
+		};
+		F6A70DEE90E631E9EDF6AC9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA811A0B2DC23AAAA14C366B /* Pods-HBVideoPlayDemo.debug.xcconfig */,
+				454703247B9580C5BF0F0E83 /* Pods-HBVideoPlayDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		848A5011237D4EAE001F9158 /* HBVideoPlayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848A5028237D4EAF001F9158 /* Build configuration list for PBXNativeTarget "HBVideoPlayDemo" */;
+			buildPhases = (
+				B3A87D6BA826DA1397C8D9E7 /* [CP] Check Pods Manifest.lock */,
+				848A500E237D4EAE001F9158 /* Sources */,
+				848A500F237D4EAE001F9158 /* Frameworks */,
+				848A5010237D4EAE001F9158 /* Resources */,
+				3D025C50A5E574BA3698BE70 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HBVideoPlayDemo;
+			productName = HBVideoPlayDemo;
+			productReference = 848A5012237D4EAE001F9158 /* HBVideoPlayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848A500A237D4EAE001F9158 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					848A5011237D4EAE001F9158 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 848A500D237D4EAE001F9158 /* Build configuration list for PBXProject "HBVideoPlayDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 848A5009237D4EAE001F9158;
+			productRefGroup = 848A5013237D4EAE001F9158 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				848A5011237D4EAE001F9158 /* HBVideoPlayDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		848A5010237D4EAE001F9158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848A5022237D4EAF001F9158 /* LaunchScreen.storyboard in Resources */,
+				848A501F237D4EAF001F9158 /* Assets.xcassets in Resources */,
+				848A501D237D4EAE001F9158 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D025C50A5E574BA3698BE70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HBVideoPlayDemo/Pods-HBVideoPlayDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HBVideoPlayDemo/Pods-HBVideoPlayDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HBVideoPlayDemo/Pods-HBVideoPlayDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A87D6BA826DA1397C8D9E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HBVideoPlayDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848A500E237D4EAE001F9158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848A502D237D4F27001F9158 /* HBVideoPlayViewController.m in Sources */,
+				848A5033237D6240001F9158 /* HBAVPlayer.m in Sources */,
+				848A501A237D4EAE001F9158 /* ViewController.m in Sources */,
+				848A5025237D4EAF001F9158 /* main.m in Sources */,
+				848A5017237D4EAE001F9158 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		848A501B237D4EAE001F9158 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848A501C237D4EAE001F9158 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		848A5020237D4EAF001F9158 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848A5021237D4EAF001F9158 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848A5026237D4EAF001F9158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		848A5027237D4EAF001F9158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		848A5029237D4EAF001F9158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA811A0B2DC23AAAA14C366B /* Pods-HBVideoPlayDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BYR72B64W9;
+				INFOPLIST_FILE = HBVideoPlayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuantu.HBVideoPlayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		848A502A237D4EAF001F9158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 454703247B9580C5BF0F0E83 /* Pods-HBVideoPlayDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BYR72B64W9;
+				INFOPLIST_FILE = HBVideoPlayDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuantu.HBVideoPlayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848A500D237D4EAE001F9158 /* Build configuration list for PBXProject "HBVideoPlayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848A5026237D4EAF001F9158 /* Debug */,
+				848A5027237D4EAF001F9158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848A5028237D4EAF001F9158 /* Build configuration list for PBXNativeTarget "HBVideoPlayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848A5029237D4EAF001F9158 /* Debug */,
+				848A502A237D4EAF001F9158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 848A500A237D4EAE001F9158 /* Project object */;
+}

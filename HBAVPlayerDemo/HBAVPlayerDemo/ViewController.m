@@ -12,6 +12,7 @@
 @property (nonatomic, strong) AVPlayerItem *playerItem;
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
+@property (nonatomic, strong) CADisplayLink *displayLink;
 @end
 
 @implementation ViewController
@@ -22,10 +23,17 @@
     
     NSString *playerUrl = @"http://front-images.oss-cn-hangzhou.aliyuncs.com/i4/7cd76264037912663238de6cad3a5a71-167200670";
     [self playWithUrl:playerUrl];
+    
+//    self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(getPlayProgress)];
+//    [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
 }
 
 
-
+//- (void)getPlayProgress {
+//    CMTime currentCTTime = self.player.currentItem.currentTime;
+//    CGFloat play_progress = CMTimeGetSeconds(currentCTTime) / CMTimeGetSeconds(self.player.currentItem.duration);
+//    NSLog(@"---------播放的进度:%lf", play_progress);
+//}
 
 - (void)playWithUrl:(NSString *)playerUrl {
     AVAsset *asset = [AVAsset assetWithURL:[NSURL URLWithString:playerUrl]];
@@ -46,12 +54,13 @@
     // AVLayerVideoGravityResizeAspect
     // AVLayerVideoGravityResizeAspectFill
     // AVLayerVideoGravityResize
-    self.playerLayer.videoGravity = AVLayerVideoGravityResize;
+    self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     [self.view.layer addSublayer:self.playerLayer];
+    
     
     //------------------------AVPlayerItem监听-------------------
     [self setPlayerItemObserver];
-    
+
     //-------------------------播放相关通知监听------------------------
     [self setPlayObserver];
 }
@@ -83,7 +92,6 @@
 
 - (void)moviePlayDidEnd:(NSNotification *)notification {
     NSLog(@"-------视频播放完毕");
-    
     //
     AVPlayerItem*item = [notification object];
     [item seekToTime:kCMTimeZero completionHandler:^(BOOL finished) {
@@ -100,9 +108,21 @@
 }
 
 - (void)dealloc {
+   [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
-[[NSNotificationCenter defaultCenter] removeObserver:self];
 
+- (void)stopPlay {
+    [self.player pause];
+    if (self.displayLink) {
+        [self.displayLink invalidate];
+        self.displayLink = nil;
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self stopPlay];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
@@ -117,7 +137,7 @@
             // 转换成秒
             CGFloat totalSecond = CMTimeGetSeconds(duration);
             NSLog(@"-------视频时长:%lf", totalSecond);
-            
+            //
             [self.player play];
         } else if (playerItem.status == AVPlayerItemStatusFailed) {
             NSLog(@"------失败");
@@ -132,7 +152,13 @@
            CMTimeRange timeRange = [timeRanges.firstObject CMTimeRangeValue];
            CMTime bufferDuration =  CMTimeAdd(timeRange.start, timeRange.duration);
             // 获取到缓冲的时间,然后除以总时间,得到缓冲的进度
-            NSLog(@"-----缓冲的进度:%f",CMTimeGetSeconds(bufferDuration));
+            
+//            CGFloat load_seconds = (bufferDuration.value / bufferDuration.timescale);
+//            CGFloat load_progress = load_seconds / CMTimeGetSeconds(self.player.currentItem.duration);
+            
+            CGFloat load_progress = CMTimeGetSeconds(bufferDuration) / CMTimeGetSeconds(self.player.currentItem.duration);
+            NSLog(@"==========-------------------------缓冲的进度:%lf", load_progress);
+//            NSLog(@"-----缓冲的进度:%f",CMTimeGetSeconds(bufferDuration));
         }
     } else if ([@"playbackBufferEmpty" isEqualToString:keyPath]) {
         NSLog(@"------缓存不够");
