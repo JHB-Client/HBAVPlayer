@@ -14,6 +14,7 @@
 @interface ViewController ()
 @property (nonatomic, weak) UIView *bgView;
 @property (nonatomic, strong) HBAVPlayer *player;
+@property (nonatomic, strong) UIButton *selfRotationBtn;
 @end
 
 static BOOL hasRotation;
@@ -32,12 +33,12 @@ static BOOL hasRotation;
         make.edges.mas_offset(0);
     }];
     
-    UIButton *selfRotationBtn = [UIButton new];
-    selfRotationBtn.backgroundColor = [UIColor greenColor];
-    [selfRotationBtn setTitle:@"内部切换" forState:UIControlStateNormal];
-    [selfRotationBtn addTarget:self action:@selector(selfRotation) forControlEvents:UIControlEventTouchUpInside];
-    [bgView addSubview:selfRotationBtn];
-    [selfRotationBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.selfRotationBtn = [UIButton new];
+    self.selfRotationBtn.backgroundColor = [UIColor greenColor];
+    [self.selfRotationBtn setTitle:@"内部切换" forState:UIControlStateNormal];
+    [self.selfRotationBtn addTarget:self action:@selector(selfRotation) forControlEvents:UIControlEventTouchUpInside];
+    [bgView addSubview:self.selfRotationBtn];
+    [self.selfRotationBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self.view);
         make.top.mas_equalTo(100);
         make.size.mas_equalTo(CGSizeMake(100, 50));
@@ -57,6 +58,7 @@ static BOOL hasRotation;
     
     self.bgView = bgView;
 }
+
 
 - (void)selfRotation {
     hasRotation = !hasRotation;
@@ -78,7 +80,7 @@ static BOOL hasRotation;
 - (HBAVPlayer *)player {
     if (_player == nil) {
         _player = [[HBAVPlayer alloc] initWithSuperView:self.view playerUrl:@"http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d9bfe_wpd.mp4"];
-        
+    
         __weak typeof(self) WeakSelf = self;
         WeakSelf.player.popbackBlock = ^{
             [WeakSelf selfRotation];
@@ -100,5 +102,6 @@ static BOOL hasRotation;
     //2.
     [self.navigationController pushViewController:[NSClassFromString(@"HBVideoPlayViewController") new] animated:true];
 }
+
 
 @end
