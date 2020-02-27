@@ -45,7 +45,7 @@
 
 - (HBAVPlayer *)player {
     if (_player == nil) {
-        _player = [[HBAVPlayer alloc] initWithSuperView:self.view playerUrl:@"http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d9bfe_wpd.mp4"];
+        _player = [[HBAVPlayer alloc] initWithSuperView:self.view playerUrl:@"http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4"];
         
         __weak typeof(self) WeakSelf = self;
         WeakSelf.player.popbackBlock = ^{

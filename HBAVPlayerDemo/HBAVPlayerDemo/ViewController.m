@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSString *playerUrl = @"http://wvideo.spriteapp.cn/video/2016/0328/56f8ec01d9bfe_wpd.mp4";
+    NSString *playerUrl = @"http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4";
     [self playWithUrl:playerUrl];
     
 //    self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(getPlayProgress)];

@@ -366,7 +366,7 @@
 			baseConfigurationReference = EA811A0B2DC23AAAA14C366B /* Pods-HBVideoPlayDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BYR72B64W9;
 				INFOPLIST_FILE = HBVideoPlayDemo/Info.plist;
@@ -386,7 +386,7 @@
 			baseConfigurationReference = 454703247B9580C5BF0F0E83 /* Pods-HBVideoPlayDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BYR72B64W9;
 				INFOPLIST_FILE = HBVideoPlayDemo/Info.plist;

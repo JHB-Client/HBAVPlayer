@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		840CDC76237B946E00850469 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CDC75237B946E00850469 /* AppDelegate.m */; };
-		840CDC79237B946E00850469 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CDC78237B946E00850469 /* SceneDelegate.m */; };
 		840CDC7C237B946E00850469 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CDC7B237B946E00850469 /* ViewController.m */; };
 		840CDC7F237B946E00850469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840CDC7D237B946E00850469 /* Main.storyboard */; };
 		840CDC81237B947100850469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840CDC80237B947100850469 /* Assets.xcassets */; };
@@ -20,8 +19,6 @@
 		840CDC71237B946E00850469 /* HBAVPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBAVPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840CDC74237B946E00850469 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		840CDC75237B946E00850469 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		840CDC77237B946E00850469 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		840CDC78237B946E00850469 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		840CDC7A237B946E00850469 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		840CDC7B237B946E00850469 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		840CDC7E237B946E00850469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,8 +60,6 @@
 			children = (
 				840CDC74237B946E00850469 /* AppDelegate.h */,
 				840CDC75237B946E00850469 /* AppDelegate.m */,
-				840CDC77237B946E00850469 /* SceneDelegate.h */,
-				840CDC78237B946E00850469 /* SceneDelegate.m */,
 				840CDC7A237B946E00850469 /* ViewController.h */,
 				840CDC7B237B946E00850469 /* ViewController.m */,
 				840CDC7D237B946E00850469 /* Main.storyboard */,
@@ -149,7 +144,6 @@
 				840CDC7C237B946E00850469 /* ViewController.m in Sources */,
 				840CDC76237B946E00850469 /* AppDelegate.m in Sources */,
 				840CDC87237B947100850469 /* main.m in Sources */,
-				840CDC79237B946E00850469 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BYR72B64W9;
 				INFOPLIST_FILE = HBAVPlayerDemo/Info.plist;
@@ -299,6 +294,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuantu.HBAVPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -307,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BYR72B64W9;
 				INFOPLIST_FILE = HBAVPlayerDemo/Info.plist;
@@ -317,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuantu.HBAVPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
