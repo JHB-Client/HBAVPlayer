@@ -1,0 +1,6 @@
+framework module Pods_HBNormalVideoPlayerDemo {
+  umbrella header "Pods-HBNormalVideoPlayerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
